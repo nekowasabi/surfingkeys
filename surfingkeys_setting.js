@@ -2,13 +2,6 @@
 settings.prevLinkRegex = /((<<|prev(ious)?)|<|‹|«|←|前へ|前のページ+)/i;
 settings.nextLinkRegex = /((>>|next)|>|›|»|→|次へ|次のページ+)/i;
 
-let a = document.getElementsByClassName('entrylist-header-main');
-console.log(a.innerHTML);
-if (/びっくり/.test(a.innerHTML)) {
-    console.log('okkkk');
-    a.style.display = 'none';
-}
-
 /**
    scrollByの動作がFirefox 65で予測不可能になったのでscrollToで再実装する
    スムーズスクロールする
@@ -58,7 +51,7 @@ mapkey("j", "Scroll down of line", () => {
 });
 
 // blacklist
-settings.blacklistPattern = /mail.google.com|tweetdeck.twitter.com|jp.inoreader.com|calendar.google.com/;
+settings.blacklistPattern = /mail.google.com|tweetdeck.twitter.com|jp.inoreader.com|calendar.google.com|rememberthemilk.com/;
 
 // bookmarklet
 mapkey(",h", "Scroll down of line", () => {
