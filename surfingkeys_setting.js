@@ -51,7 +51,7 @@ mapkey("j", "Scroll down of line", () => {
 });
 
 // blacklist
-settings.blacklistPattern = /mail.google.com|tweetdeck.twitter.com|jp.inoreader.com|calendar.google.com|rememberthemilk.com/;
+settings.blacklistPattern = /mail.google.com|tweetdeck.twitter.com|jp.inoreader.com|calendar.google.com|rememberthemilk.co/;
 
 // bookmarklet
 mapkey(",h", "Scroll down of line", () => {
@@ -120,6 +120,16 @@ mapkey('go', '#10Jump to vim-like mark in current tab', function(mark) {
   }
 });
 
+// rootにジャンプ
+mapkey('gU', '#4Go to root of current URL hierarchy', function() {
+    window.location.href = window.location.origin;
+});
+
+// open inspector
+mapkey('si', '#12Open Chrome Inspect', function() {
+tabOpenLink("chrome://inspect/#devices");
+});
+
 // ------------------------------------------------------------
 // 検索エンジン
 // Google jp 1年以内
@@ -175,7 +185,11 @@ mapkey('om', '#8Open Search with alias m', function() {
 mapkey('ot', 'Choose a tab with omnibar', function() {
     Front.openOmnibar({type: "Tabs"});
 });
-
+// stack ovewrflow
+addSearchAliasX('s', 'stackoverflow', 'http://stackoverflow.com/search?q=');
+mapkey('os', '#8Open Search with alias s', function() {
+  Front.openOmnibar({ type: "SearchEngine", extra: "s" });
+});
 
 // open URL from clipboard
 mapkey('p', '#3Open URL from clipboard', () => {
