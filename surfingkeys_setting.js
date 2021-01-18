@@ -1,6 +1,7 @@
 // global
 settings.prevLinkRegex = /((<<|prev(ious)?)|<|‹|«|←|前へ|前のページ+)/i;
 settings.nextLinkRegex = /((>>|next)|>|›|»|→|次へ|次のページ+)/i;
+settings.startToShowEmoji = 0;
 
 /**
    scrollByの動作がFirefox 65で予測不可能になったのでscrollToで再実装する
