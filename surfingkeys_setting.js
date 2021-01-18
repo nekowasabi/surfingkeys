@@ -3,6 +3,7 @@ settings.prevLinkRegex = /((<<|prev(ious)?)|<|‹|«|←|前へ|前のページ+
 settings.nextLinkRegex = /((>>|next)|>|›|»|→|次へ|次のページ+)/i;
 iunmap(":");
 
+
 /**
    scrollByの動作がFirefox 65で予測不可能になったのでscrollToで再実装する
    スムーズスクロールする
