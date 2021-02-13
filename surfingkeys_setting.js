@@ -1,4 +1,4 @@
-// global
+// globala
 settings.prevLinkRegex = /((<<|prev(ious)?)|<|‹|«|←|前へ|前のページ+)/i;
 settings.nextLinkRegex = /((>>|next)|>|›|»|→|次へ|次のページ+)/i;
 iunmap(":");
