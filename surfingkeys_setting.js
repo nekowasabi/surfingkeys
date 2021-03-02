@@ -183,6 +183,16 @@ addSearchAliasX('m', 'mercari', 'https://www.mercari.com/jp/search/?status_on_sa
 mapkey('om', '#8Open Search with alias m', function() {
   Front.openOmnibar({ type: "SearchEngine", extra: "m" });
 });
+// rakuten
+addSearchAliasX('r', 'rakuten', 'https://search.rakuten.co.jp/search/mall/')
+mapkey('or', '#8Open Search with alias r', function() {
+  Front.openOmnibar({ type: "SearchEngine", extra: "r" });
+});
+// mercari
+addSearchAliasX('m', 'mercari', 'https://www.mercari.com/jp/search/?status_on_sale=1&keyword=')
+mapkey('om', '#8Open Search with alias m', function() {
+  Front.openOmnibar({ type: "SearchEngine", extra: "m" });
+});
 // Tabs
 mapkey('ot', 'Choose a tab with omnibar', function() {
     Front.openOmnibar({type: "Tabs"});
