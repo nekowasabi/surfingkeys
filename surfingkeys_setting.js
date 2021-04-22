@@ -287,7 +287,7 @@ mapkey('ch', '#7Copy title and link to human readable', () => {
 // Link Hints
 Hints.style (`
   font-family: monospace;
-  font-size: 13pt;
+  font-size: 16pt !important;
   font-weight: normal;
   text-transform: lowercase;
 `);
@@ -295,7 +295,7 @@ Hints.style (`
 // Text Hints
 Hints.style (`
   font-family: monospace;
-  font-size: 13pt;
+  font-size: 16pt !important;
   text-transform: lowercase;
   `,
   "text"
